@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Float CSS</title>
+    <style>
+        body {
+            font-family: 'Gothic A1', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6eaf3;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            overflow: auto; /* Limpiar floats */
+            text-align: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 0 10px;
+            background-color: #3498db;
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            font-size: 24px;
+            color: #fff;
+            line-height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            font-family: 'Gothic A1', sans-serif;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .none {
+            float: none; /* Resetear float */
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Gothic A1', sans-serif;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo de Float CSS</h2>
+    <div class="container">
+        <div class="box left">Left</div>
+        <div class="box right">Right</div>
+        <div class="box none">None</div>
+    </div>
+    <p>
+        Este es un ejemplo de cómo usar la propiedad CSS float con los valores left, right y none.<br>
+        Los elementos flotantes se mueven hacia la izquierda o la derecha dentro de su contenedor.<br>
+        El valor none hace que el elemento no flote y se coloque debajo de los elementos flotantes anteriores.
+    </p>
+</body>
+</html>

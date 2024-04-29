@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Overflow CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Overflow visible */
+        .visible {
+            overflow: visible;
+        }
+
+        /* Overflow hidden */
+        .hidden {
+            overflow: hidden;
+        }
+
+        /* Overflow scroll */
+        .scroll {
+            overflow: scroll;
+        }
+
+        /* Overflow auto */
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Overflow CSS</h2>
+        <div class="box visible">
+            <h3>Overflow Visible</h3>
+            <p>El contenido que excede el tamaño del contenedor es visible fuera de este.</p>
+        </div>
+        <div class="box hidden">
+            <h3>Overflow Hidden</h3>
+            <p>El contenido que excede el tamaño del contenedor se oculta.</p>
+        </div>
+        <div class="box scroll">
+            <h3>Overflow Scroll</h3>
+            <p>Se agrega una barra de desplazamiento al contenedor cuando el contenido excede su tamaño.</p>
+        </div>
+        <div class="box auto">
+            <h3>Overflow Auto</h3>
+            <p>Se agrega una barra de desplazamiento al contenedor solo si el contenido excede su tamaño.</p>
+        </div>
+    </div>
+</body>
+</html>

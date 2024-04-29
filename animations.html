@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Elementos Azules</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f2f2f2; /* Color de fondo */
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-50px) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+
+        .elemento {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #3498db; /* Color azul */
+            border-radius: 50%;
+            animation: fall 5s linear infinite; /* Duración de la animación y repetición infinita */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Generar elementos azules
+        function createElements() {
+            const elemento = document.createElement('div');
+            elemento.classList.add('elemento');
+            elemento.style.left = Math.random() * window.innerWidth + 'px'; /* Posición horizontal aleatoria */
+            document.body.appendChild(elemento);
+            setTimeout(() => {
+                elemento.remove();
+            }, 10000); /* Eliminar elemento después de 10 segundos */
+        }
+
+        setInterval(createElements, 200); /* Generar elementos azules cada 200 milisegundos */
+    </script>
+</body>
+</html>
+s

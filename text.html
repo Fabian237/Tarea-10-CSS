@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Propiedades de Texto en CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .text-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 80%;
+            text-align: center; /* Alineación del texto */
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 1.5;
+            text-decoration: underline; /* Decoración del texto */
+            text-transform: uppercase; /* Transformación del texto */
+            letter-spacing: 2px; /* Espaciado entre letras */
+        }
+
+        .property {
+            color: #333333; /* Color del texto */
+        }
+
+        .color-text {
+            color: #3498db; /* Color azul para el texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <p class="text">
+            Este es un ejemplo de cómo aplicar varias propiedades de texto en CSS.<br>
+            <strong><span class="color-text">Color:</span></strong> Cambia el color del texto.<br>
+            <strong>Text-align:</strong> Alinea el texto en el centro.<br>
+            <strong>Text-decoration:</strong> Subraya el texto.<br>
+            <strong>Text-transform:</strong> Transforma el texto a mayúsculas.<br>
+            <strong>Letter-spacing:</strong> Espacia las letras del texto.<br>
+        </p>
+    </div>
+</body>
+</html>

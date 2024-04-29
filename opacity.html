@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparencia de Imagen con CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image {
+            display: block;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(52, 152, 219, 0.5);
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://www.w3schools.com/css/img_5terre.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="image-container">
+            <img class="image" src="https://www.w3schools.com/css/klematis.jpg" alt="Klematis">
+            <div class="overlay">
+                <div class="text">Transparencia</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

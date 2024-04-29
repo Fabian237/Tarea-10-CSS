@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Padding en CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: #22009e;
+            border-radius: 10px;
+            padding: 40px; /* Relleno de 40px en todos los lados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>Cuadro con Padding en CSS</h2>
+                <p>
+                    Este es un ejemplo de cómo utilizar las propiedades de padding en CSS para crear espacio alrededor del contenido dentro de un elemento.
+                </p>
+            </div>
+            <div class="explanation">
+                <strong>Explicación:</strong><br>
+                La propiedad <strong>padding</strong> establece el relleno alrededor del contenido del elemento.<br>
+                Se puede especificar un valor de relleno para todos los lados a la vez o valores individuales para cada lado.<br>
+                En este ejemplo, hemos establecido un relleno de 40px en todos los lados del cuadro.<br>
+                Esto crea un espacio adicional entre el borde del cuadro y su contenido, proporcionando un aspecto más espaciado y agradable visualmente.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
